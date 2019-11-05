@@ -1,0 +1,33 @@
+@import "../../../../../../scss/global";
+
+.Our-clients {
+    svg {
+        fill: #1c1c1c;
+        opacity: 0.6;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    ul {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 30px 0;
+            width: 20%;
+        }
+    }
+}
+@media(max-width:767px){
+    .Our-clients{
+        padding: 30px 0 !important;
+        ul {
+            li {
+                width:50%;
+                margin: 15px 0;
+            }
+        }
+    }
+}

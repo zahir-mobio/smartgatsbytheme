@@ -1,0 +1,67 @@
+@import "../scss/mixins";
+
+.btn-primary {
+    @include btnprimary;
+}
+
+.btn-secondary {
+    @include btnsecondary;
+}
+
+.btn-transparent {
+    color: transparent;
+    background: transparent;
+    padding: 15px;
+    border: transparent;
+
+    &:hover,
+    &:focus {
+        border: transparent;
+    }
+}
+.btn_primary_invert{
+    @include btn_primary_invert;
+}
+.btn_line_invert{
+    @include btn_line_invert;
+}
+.basic-slider {
+    .slick-dots {
+        li {
+            button {
+                &:before {
+                    content: '';
+                    height: 7px;
+                    width: 7px;
+                    background: #C0C0C0;
+                    border-radius: 100%;
+                    opacity: 1
+                }
+            }
+        }
+
+        li.slick-active {
+            button {
+                &:before {
+                    background: $primary-color;
+                    opacity: 1
+                }
+            }
+        }
+    }
+}
+
+.line-btn {
+    @include linebutton;
+    border: 1px solid $border-primary;
+    color: $primary-text;
+}
+
+@media(max-width:767px) {
+
+    .btn-primary,
+    .btn-secondary,
+    .line-btn {
+        padding: 10px 25px;
+    }
+}

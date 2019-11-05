@@ -1,0 +1,48 @@
+@import "../../../../../../scss/global";
+
+.testimonialslider-wrp{
+    padding: 20px 0;
+    .quote-open{
+        position: absolute;
+        top:-35px;
+        left:-20px;
+    }
+    .quote-close{
+        position: absolute;
+        bottom:-35px;
+        right:-20px;
+    }
+    .testimonial-custom{
+        padding: 35px 0 10px 0;
+    }
+    .profile-pic{
+        width:50px;
+        .gatsby-image-wrapper {
+            max-width:50px;
+        }
+    }
+    .designation{
+        span{
+            color: $slider-designation;
+        }
+    }
+    .slick-dots {
+        li {
+            width: 7px;
+        }
+    }
+}
+@media(max-width:767px){
+    .testimonialslider-wrp {
+        .quote-open{
+            left:-5px;
+        }
+        .quote-close{
+            right:-5px;
+            bottom:-50px;
+        }
+        h4{
+            font-size: 22px;
+        }
+    }
+}

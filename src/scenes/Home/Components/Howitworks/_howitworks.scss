@@ -1,0 +1,70 @@
+@import "../../../../scss/global";
+
+
+.how-it-works-wrp {
+  background: $primary-text;
+  padding: 85px 0;
+  margin-top: 45px;
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+.how-it-works-desc {
+  p {
+    color: $text-alternate;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+.how-works-section {
+  p {
+    color: $text-alternate;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.how-works-vector1,
+.how-works-vector2,
+.how-works-vector3,
+.how-works-vector4 {
+  background: url(../../../../static/images/vector-1.png) no-repeat;
+  height: 87px;
+  width: 87px;
+  position: relative;
+}
+.how-works-vector2 {
+  background: url(../../../../static/images/vector-2.png) no-repeat;
+}
+.how-works-vector3 {
+  background: url(../../../../static/images/vector-3.png) no-repeat;
+}
+.how-works-vector4 {
+  background: url(../../../../static/images/vector-4.png) no-repeat;
+}
+.counter-badge1,
+.counter-badge2,
+.counter-badge3,
+.counter-badge4 {
+  position: absolute;
+  color: $textwhite;
+  padding: 10px;
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  right: 35px;
+  top: -26px;
+  border: 1px solid $primary-color;
+  font-weight: bold;
+  color: $primary-color;
+}
+@media (max-width: 767px) {
+  .how-it-works-wrp {
+    padding: 45px 0;
+  }
+  .how-it-works-desc {
+    p {
+      font-size: 16px;
+    }
+  }
+}

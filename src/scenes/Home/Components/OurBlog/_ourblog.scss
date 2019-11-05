@@ -1,0 +1,35 @@
+@import "../../../../scss/global";
+
+.dark-background{
+    background:$primary-text;
+}
+.our-blog-wrp{
+    margin-top: 30px;
+    padding: 80px 0;
+    .heading-invert{
+        margin-bottom: 20px;
+    }
+}
+.our-blog-text{
+    p {
+        color:$text-alternate;
+        font-size: 18px;
+    }
+}
+.blog-tile-wrp{
+    margin: 30px 0;
+}
+.get-started-heading{
+    margin-top:10px;
+}
+.bg-primary{
+    background: $primary-color;
+}
+
+@media(max-width:991px){
+    .get-started-heading,.get-started-btn{
+        text-align: center;
+        width:100%;
+    }
+    
+}

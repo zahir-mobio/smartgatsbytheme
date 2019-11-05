@@ -1,0 +1,64 @@
+@import "./variables";
+
+@mixin heading{
+    color: $primary-text;
+    font-weight: bold;
+}
+@mixin headinginvert {
+    @include heading;
+    color: $textwhite;
+}
+@mixin btnprimary {
+    color: $textwhite;
+    padding: 12px 35px;
+    background: $primary-color;
+    border-radius: 4px;
+    border:1px solid $primary-color;
+    font-weight: bold;
+    text-transform: capitalize;
+    &:hover, &:focus {
+        background: transparent;
+        text-decoration: none;
+        border:1px solid $primary-color;
+        color: $primary-color;
+    }
+}
+@mixin  btnsecondary {
+    @include btnprimary;
+    background: $secondary-color;
+    border:1px solid $secondary-color;
+    &:hover, &:focus {
+        border:1px solid $secondary-color;
+        color: $secondary-color;
+    }
+}
+@mixin linebutton {
+    @include btnprimary;
+    background: transparent;
+    &:hover,&:focus {
+        border:1px solid $secondary-color;
+        color: $secondary-color;
+    }
+}
+@mixin  btn_primary_invert {
+    @include btnprimary;
+    background: $textwhite;
+    color:$primary-color;
+    border: 1px solid $textwhite;
+    &:hover, &:focus {
+        background: $secondary-color;
+        color: $textwhite;
+        border: 1px solid $secondary-color;
+    }
+}
+@mixin  btn_line_invert {
+    @include btnprimary;
+    background: transparent;
+    color: $textwhite;
+    border: 1px solid $textwhite;
+    &:hover, &:focus {
+        
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+    }
+}
